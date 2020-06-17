@@ -1,0 +1,66 @@
+@charset "UTF-8";
+
+body {
+	margin: 0 auto;
+	background-color: #eaeaea;
+}
+
+input {
+	padding: 5px 15px;
+	display: block;
+	background: rgba(255, 255, 255, 0.1);
+	background-color: #d5d5d5;
+	border: 2px solid rgba(255, 255, 255, 0);
+	overflow: hidden;
+	text-align: center;
+	margin-top: 40px;
+	margin-left: auto;
+	transition: all 0.5s ease-in-out;
+	margin-right: auto;
+	border-radius: 25px;
+	font-size: 1.2em;
+}
+
+div {
+	position: relative;
+	border-radius: 30px;
+	width: 721px;
+	margin: 1.5% auto;
+	padding: 100px 160px;
+	background-size: cover;
+	box-shadow: 0px 30px 60px -5px #000;
+	background-color: #a9a9a9;
+	text-align: center;
+}
+
+table {
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	width: 721px;
+}
+
+tr {
+	margin-left: 0;
+}
+
+.submit:hover {
+	cursor: pointer;
+	text-decoration: none;
+	box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12), 0 1px 5px 0
+		rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+}
+
+.submit {
+	display: inline-block;
+	background-color: #c0c0c0;
+	color: #FFF;
+	width: 80px;
+	padding: 0.6em;
+	text-decoration: none;
+	border-radius: 4px;
+	box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.12), 0 3px 20px 0
+		rgba(0, 0, 0, 0.12), 0 5px 6px -2px rgba(0, 0, 0, 0.2);
+	-webkit-tap-highlight-color: transparent;
+	transition: .3s ease-out;
+}

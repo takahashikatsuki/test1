@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/java11">
+		<attributes>
+			<attribute name="module" value="true"/>
+			<attribute name="owner.project.facets" value="java"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.jst.server.core.container/org.eclipse.jst.server.tomcat.runtimeTarget/Tomcat9 (Java11)">
+		<attributes>
+			<attribute name="owner.project.facets" value="jst.web"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
+	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
+	<classpathentry kind="lib" path="/Users/takahashikatsuki/Desktop/mysql-connector-java-8.0.20/mysql-connector-java-8.0.20.jar"/>
+	<classpathentry kind="lib" path="/Users/takahashikatsuki/Desktop/twitter4j-4.0.7/lib/twitter4j-async-4.0.7.jar" sourcepath="/var/folders/f2/1_58zvl57_z9_grlb54npb_h0000gn/T/.org.sf.feeling.decompiler1591594210432/source/twitter4j-async-4.0.7-sources.jar"/>
+	<classpathentry kind="lib" path="/Users/takahashikatsuki/Desktop/twitter4j-4.0.7/lib/twitter4j-core-4.0.7.jar"/>
+	<classpathentry kind="lib" path="/Users/takahashikatsuki/Desktop/twitter4j-4.0.7/lib/twitter4j-examples-4.0.7.jar"/>
+	<classpathentry kind="lib" path="/Users/takahashikatsuki/Desktop/twitter4j-4.0.7/lib/twitter4j-stream-4.0.7.jar"/>
+	<classpathentry kind="output" path="build/classes"/>
+</classpath>
