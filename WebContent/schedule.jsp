@@ -9,16 +9,21 @@
 <link rel="stylesheet" type="text/css" href="Style.css">
 </head>
 <body>
+<div>
 		<c:forEach var="a" items="${list}">
-${a.date}:${a.time}:${a.schedule}
+<p>${a.date}     ${a.time}</p><p class="a">${a.schedule}</p>
 
-	<form method="get" action="Delete">
+	<form method="get" action="Delete" class="delete">
 				<input type="submit" name="button" value="" class="button-delete">
+				<input type="hidden" value="${a.id}" name="id">
+			</form>
+			<form method="get" action="edit">
+			<input type="submit" name="button" value="edit" class="button-edit">
 				<input type="hidden" value="${a.id}" name="id">
 			</form>
 
 		</c:forEach>
-
+<br>
 	<p>Please select a time</p>
 
 	<form method="get" action="Insert">
@@ -30,12 +35,13 @@ ${a.date}:${a.time}:${a.schedule}
 			<c:forEach var="time2" items="${minute}">
 				<option value="${time2}">${time2}</option>
 			</c:forEach>
-		</select><br> <input type="text" name="schedule" value="" />
+		</select><br> <input class="bottan2" type="text" name="schedule" value="" />
 		<input
-			type="submit" name="add" value="add">
+			class="bottan" type="submit" name="add" value="add">
 	</form>
 	<form method="get" action="Return">
-		<input type="submit" name="add" value="Return">
+		<input class="bottan" type="submit" name="add" value="Return">
 	</form>
+	</div>
 </body>
 </html>

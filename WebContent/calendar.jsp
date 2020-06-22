@@ -12,7 +12,7 @@
 		<table>
 			<tr>
 				<c:forEach var="var1" items="${space1}">
-${var1}
+				${var1}
 </c:forEach>
 			</tr>
 			<form method="get" action="Time">

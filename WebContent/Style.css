@@ -1,36 +1,93 @@
 @charset "UTF-8";
 
-body{
-    max-width: 50%;
-  	margin:  0 auto;
-  	padding-light: 200px;
-  	border: solid 1px #000000;
-  	background-color:#eaeaea;
-    background-size:contain
+body {
+	max-width: 50%;
+	margin: 0 auto;
+	background-color: #eaeaea;
+	background-size: contain;
+	background-image: url("images.jpeg");
+	background-size:100%;
 }
 
-
-h1, p{
+p {
 	margin-top: 0;
+	font-family: Impact;
+	margin: 8px
 }
 
-.delete{
-	padeding-top:5px;
+.a {
+	font-family: sans-serif;
 }
 
-.button-delete{
-    border: 0px;
-    width:24px;
-    height:24px;
+div {
+	position: relative;
+	border-radius: 15px;
+	width: 405px;
+	margin: 2% auto;
+	padding: 20px 60px;
+	background-size: cover;
+	box-shadow: 0px 30px 60px -5px #000;
+	background-color: #c0c0c0;
+}
+
+select {
+	border-radius: 7px;
+	box-shadow: 0px 3px 3px 0px #000;
+	background-color: #d5d5d5;
+	transition: .0s;
+	margin-bottom: 10px;
+}
+
+select:hover {
+	background: #ffffff;
+	transition: .0s;
+	color: #000000;
+}
+
+.bottan:hover {
+	background: #ffffff;
+	transition: .0s;
+	color: #000000;
+}
+
+.bottan {
+	box-shadow: 0px 3px 3px 0px #000;
+	padding: 5px 6px;
+	background-color: #d5d5d5;
+	transition: .0s;
+	color: #000000;
+	border-radius: 7px;
+}
+
+.bottan2:hover {
+	background: #ffffff;
+	transition: .0s;
+	color: #000000;
+}
+
+.bottan2 {
+	box-shadow: 0px 3px 3px 0px #000;
+	padding: 5px 6px;
+	background-color: #d5d5d5;
+	transition: .0s;
+	color: #000000;
+	border-radius: 7px;
+	width: 220px;
+	margin-bottom: 8px;
+}
+
+.delete {
+	width: 1px;
+	padding-left: 5px;
+}
+
+.button-delete {
+	border: 0px;
+	width: 24px;
 	background: url("delete_icon.png") left top no-repeat;
+	filter: invert(88%) sepia(61%) saturate(0%) hue-rotate(229deg) brightness(107%) contrast(101%);
 }
 
-.button-delete:hover{
+.button-delete:hover {
 	background: url("delete_icon_hover.png") left top no-repeat;
 }
-
-
-
-
-
-
