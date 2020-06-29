@@ -19,7 +19,7 @@ p {
 	font-family: sans-serif;
 }
 
-div {
+.ooo {
 	position: relative;
 	border-radius: 15px;
 	width: 405px;
@@ -90,4 +90,24 @@ select:hover {
 
 .button-delete:hover {
 	background: url("delete_icon_hover.png") left top no-repeat;
+}
+
+.edittext{
+	display:none;
+}
+
+.edittext{
+	padding: 3px 6px;
+	background-color: #d5d5d5;
+	transition: .0s;
+	color: #000000;
+	border-radius: 7px;
+}
+
+.edit{
+	padding: 3px 6px;
+	background-color: #d5d5d5;
+	transition: .0s;
+	color: #000000;
+	border-radius: 7px;
 }

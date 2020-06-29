@@ -15,7 +15,7 @@
 				${var1}
 </c:forEach>
 			</tr>
-			<form method="get" action="Time">
+			<form method="post" action="Time">
 				<input type="hidden" value="${YEAR}" name="year"> <input
 					type="hidden" value="${MONTH}" name="month">
 				<c:forEach var="var2" items="${space2}">

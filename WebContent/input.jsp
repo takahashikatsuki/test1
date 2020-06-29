@@ -8,7 +8,7 @@
 </head>
 <body>
 	<div>
-		<form method="get" action="calendar">
+		<form method="post" action="calendar">
 			<p>${message}</p>
 			<input type="text" name="year" value="" placeholder=year><br>
 			<input type="text" name="month" value="" placeholder=month><br>

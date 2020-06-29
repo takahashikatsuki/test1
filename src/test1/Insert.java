@@ -26,8 +26,22 @@ public class Insert extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
+
+		response.setContentType("text/html; charset=UTF-8");
+		ServletContext con = getServletContext();
+		RequestDispatcher a = con.getRequestDispatcher("/Time");
+		a.forward(request, response);
+	}
+
+
+	/**
+	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
+	 */
+	protected void doPost(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		HttpSession session = request.getSession(false);
+		request.setCharacterEncoding("UTF-8");
 		//requestをHttpServletRequest型にキャスト
 		HttpServletRequest req = (HttpServletRequest) request;
 		String hour = req.getParameter("hour");
@@ -36,6 +50,7 @@ public class Insert extends HttpServlet {
 		session.setAttribute("time", time);
 		String date = (String) session.getAttribute("date");
 		String yotei = request.getParameter("schedule");
+		System.out.println(yotei);
 
 		Dao dao = null;
 
@@ -46,19 +61,7 @@ public class Insert extends HttpServlet {
 			// TODO 自動生成された catch ブロック
 			e.printStackTrace();
 		}
-		
-		response.setContentType("text/html; charset=UTF-8");
-		ServletContext con = getServletContext();
-		RequestDispatcher a = con.getRequestDispatcher("/Time");
-		a.forward(request, response);
-	}
 
-	/**
-	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
-	 */
-	protected void doPost(HttpServletRequest request, HttpServletResponse response)
-			throws ServletException, IOException {
-		// TODO Auto-generated method stub
 		doGet(request, response);
 	}
 

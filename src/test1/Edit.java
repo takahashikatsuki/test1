@@ -10,6 +10,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 import dao.Dao;
 
@@ -25,12 +26,17 @@ public class Edit extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
+		HttpSession session = request.getSession(false);
+		request.setCharacterEncoding("UTF-8");
+		//requestをHttpServletRequest型にキャスト
+		HttpServletRequest req = (HttpServletRequest) request;
+		String update = req.getParameter("update");
 		String userid = request.getParameter("id");
 
 		Dao dao = null;
 		try {
 			dao = new Dao();
-			//dao.editdata(userid);
+			dao.editData(update,userid);
 		} catch (SQLException e) {
 			//TODO 自動生成された catch ブロック
 			e.printStackTrace();

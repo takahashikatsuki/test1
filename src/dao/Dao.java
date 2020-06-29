@@ -123,13 +123,14 @@ private ArrayList<dto> search(PreparedStatement ps) throws SQLException {
 		return n;
 	}
 
-	public int editData(String userid) throws SQLException {
-		String sql = "update from sd where id = ?";
+	public int editData(String update,String userid) throws SQLException {
+		String sql = "UPDATE sd SET schedule=? WHERE id=?";
 		PreparedStatement ps = null;
 		int n = 0;
 		try {
 			ps = con.prepareStatement(sql);
-			ps.setString(1, userid);
+			ps.setString(1, update);
+			ps.setString(2, userid);
 			n = ps.executeUpdate();
 		} finally {
 			ps.close();
