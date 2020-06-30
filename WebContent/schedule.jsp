@@ -12,7 +12,7 @@
 <body>
 	<div class="ooo">
 		<c:forEach var="a" items="${list}" varStatus="status">
-			<p>${a.date}&ensp;${a.time}</p>
+			<p id="ut_${status.count}">${a.date}&ensp;${a.time}</p>
 			<p class="a" id="a_${status.count}">${a.schedule}</p>
 			<form method="post" action="Edit">
 				<input type="text" value="${a.schedule}" id="p1_${status.count}"

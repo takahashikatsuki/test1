@@ -99,14 +99,12 @@ private ArrayList<dto> search(PreparedStatement ps) throws SQLException {
 		} finally {
 			ps.close();
 		}
-		// ここに処理を記入してください
 		return n;//コード認証が成功した数を返す戻り式
 	}
 
 	public int deleteData(String userid) throws SQLException {
 		String sql = "delete from sd where id = ?";
 		return executeUpdate(sql, userid);
-		// ここに処理を記入してください
 	}
 
 	private int executeUpdate(String sql, String param) throws SQLException {
